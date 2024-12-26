@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make It Pop Demo</title>
+  <link rel="stylesheet" href="./demo/style.css">
+</head>
+<body>
+  <main class="site-main">
+    <section class="center">
+      <h1>makeItPop.js Demo</h1>
+    </section>
+    <section class="icon-row center">
+      <div class="row">
+        <div class="icon-row__item item">fade up</div>
+        <div class="icon-row__item item">fade up</div>
+        <div class="icon-row__item item">fade up</div>
+        <div class="icon-row__item item">fade up</div>
+      </div>
+      <pre>
+        mip.each('.icon-row', (block) => {
+          mip.onScroll.enterAndExit(block)
+            .from(block.querySelectorAll('.icon-row__item'), {autoAlpha: 0, y:32, stagger: 1, duration: 3})
+        })
+      </pre>
+    </section>
+    <section class="counter-row center">
+      <div class="counter-item item">00</div>
+      <h2>Count up</h2>
+    </section>
+    <section class="plax-row center row">
+      <div class="item">item</div>
+      <div class="item">item</div>
+      <div class="item">item</div>
+    </section>
+    <section>
+
+    </section>
+  </main>
+  <script type="module" src="/demo/index.js"></script>
+</body>
+</html>
