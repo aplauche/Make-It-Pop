@@ -12,7 +12,7 @@ import { scrollingBodyClasses } from './recipes/scrolling-body-classes';
  * mip.scroll.enter()
  * mip.scroll.enterAndReset() 
  * mip.scroll.scrub()
- * mip.scroll.scrubAndPin() TODO: scaffold out this one
+ * mip.scroll.scrubAndPin() 
  * mip.scroll.sticky() TODO: build out this based on sticky half screen section OR recipe??
  * 
  * 
@@ -258,13 +258,7 @@ const makeItPop = () => {
    */
   const recipes = {
     pinnedImageSequence,
-    scrollingBodyClasses,
-    parallax: (
-      section,
-      items
-    ) => {
-      
-    },
+    scrollingBodyClasses
   }
   
 
